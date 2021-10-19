@@ -1,0 +1,307 @@
+.reference__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 147px;
+}
+
+.reference__item {
+    position: relative;
+    width: 350px;
+    margin-right: 30px;
+    padding-top: 100px;
+}
+
+.reference__item-img {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 99;
+}
+
+.reference__item::before {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 10px;
+    top: 43px;
+    left: -420px;
+    background-color: #E5ECF4;
+    z-index: 1;
+}
+
+.reference__item-header {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;  
+    margin-bottom: 27px;
+}
+
+.reference__item_text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    width: 350px;   
+}
+
+.scooter {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 650px;
+    background-image: url("../images/scooter.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    margin-bottom: 160px;
+}
+
+.scooter__container {
+    padding-top: 153px;
+}
+
+.scooter__header {
+    width: 500px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.scooter__text {
+    position: relative;
+    width: 405px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF; 
+    margin-bottom: 40px;
+    margin-left: 95px;
+}
+
+.scooter__text::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 15px;
+    top: 50%;
+    left: -70%;
+    background-image: url("../images/Path-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scooter__text::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 138px;
+    top: 50%;
+    left: 105%;
+    background-image: url("../images/Path-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__container {
+    margin-bottom: 18px;
+}
+
+.about__item {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+}
+
+.about__item:nth-child(2n) .about__item-wrapper{
+    order: 1;
+}
+
+.about__item-wrapper {
+    position: relative;
+    width: 445px;
+}
+
+.about__item-header {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;   
+    margin-bottom: 24px;
+}
+
+.about__item-text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;   
+    color: #939CAA;  
+    margin-bottom: 40px;   
+}
+
+.about__item-wrapper-1::before {
+    content: "";
+    display: inline-block;
+    width: 740px;
+    height: 150px;
+    position: absolute;
+    top: 240px;
+    left: 535px;
+    background-image: url("../images/strock.png");
+}
+.about__item-wrapper-2::before {
+    content: "";
+    display: inline-block;
+    width: 360px;
+    height: 150px;
+    position: absolute;
+    top: -50px;
+    left: -830px;
+    background-image: url("../../images/mini-strock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about__item-wrapper-3::before {
+    content: "";
+    display: inline-block;
+    width: 360px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 920px;
+    background-image: url("../images/mini-strock-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about__item-img {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .reference__list {
+      flex-direction: column;
+    }  
+    
+    .reference__item-text {
+        margin-top: -100px;
+        margin-left: 272px;
+    }
+    
+    .reference__item-header {
+        width: 398px;
+    }
+    .reference__item_text {
+        width: 398px;
+    }
+    
+    .reference__item-img {
+        left: 97px;
+    }
+    
+    .reference__item::before {
+        width: 10px;
+        height: 250px;
+        top: -160px;
+        left: 140px;
+        background-color: #E5ECF4;
+        z-index: 1;
+    }
+    .scooter {
+        width: 768px;
+        background-image: url("../images/scooter-2.jpg");
+    }
+    
+    .scooter__container {
+        max-width: 620px;
+        padding-top: 137px;
+    }
+    
+    .scooter__header {
+        width: 573px;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .scooter__text {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    
+    .scooter__text::before {
+        display: none;
+    }
+    
+    .scooter__text::after {
+        height: 128px;
+        top: 250%;
+        left: -50%;
+        background-size: contain;
+    }
+    
+    .scooter__container .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about .container {
+        padding: 0;
+    }
+
+    .about__item {
+        max-width: 445px;
+        flex-direction: column;
+        margin-bottom: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }  
+    
+    .about__item .about__item-wrapper{
+        order: 1;
+    }
+
+    .about__item-header {
+        margin-bottom: 40px;
+    }
+
+    .about__item-wrapper-1::before {
+        top: -140px;
+        left: -140px;
+    }
+
+    .about__item-wrapper-2::before {
+        top: -430px;
+        left: -180px;
+    }
+
+    .about__item-wrapper-3::before {
+        top: -360px;
+        left: 246px;
+    }
+
+    .about__item-wrapper .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
